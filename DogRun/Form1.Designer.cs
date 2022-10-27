@@ -40,10 +40,17 @@
             this.checkBox_dog3 = new System.Windows.Forms.CheckBox();
             this.textBox_wl = new System.Windows.Forms.TextBox();
             this.timer_run = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox_flag = new System.Windows.Forms.PictureBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_dog1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_dog2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_dog3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_flag)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -100,7 +107,7 @@
             // checkBox_dog1
             // 
             this.checkBox_dog1.AutoSize = true;
-            this.checkBox_dog1.Location = new System.Drawing.Point(270, 449);
+            this.checkBox_dog1.Location = new System.Drawing.Point(270, 409);
             this.checkBox_dog1.Name = "checkBox_dog1";
             this.checkBox_dog1.Size = new System.Drawing.Size(100, 19);
             this.checkBox_dog1.TabIndex = 5;
@@ -112,7 +119,7 @@
             // checkBox_dog2
             // 
             this.checkBox_dog2.AutoSize = true;
-            this.checkBox_dog2.Location = new System.Drawing.Point(270, 483);
+            this.checkBox_dog2.Location = new System.Drawing.Point(270, 440);
             this.checkBox_dog2.Name = "checkBox_dog2";
             this.checkBox_dog2.Size = new System.Drawing.Size(100, 19);
             this.checkBox_dog2.TabIndex = 6;
@@ -123,7 +130,7 @@
             // checkBox_dog3
             // 
             this.checkBox_dog3.AutoSize = true;
-            this.checkBox_dog3.Location = new System.Drawing.Point(269, 516);
+            this.checkBox_dog3.Location = new System.Drawing.Point(270, 469);
             this.checkBox_dog3.Name = "checkBox_dog3";
             this.checkBox_dog3.Size = new System.Drawing.Size(100, 19);
             this.checkBox_dog3.TabIndex = 7;
@@ -134,15 +141,75 @@
             // textBox_wl
             // 
             this.textBox_wl.Font = new System.Drawing.Font("Verdana", 18.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox_wl.Location = new System.Drawing.Point(760, 478);
+            this.textBox_wl.Location = new System.Drawing.Point(447, 432);
             this.textBox_wl.Name = "textBox_wl";
-            this.textBox_wl.Size = new System.Drawing.Size(206, 38);
+            this.textBox_wl.Size = new System.Drawing.Size(269, 38);
             this.textBox_wl.TabIndex = 8;
             this.textBox_wl.Text = "APOSTE!!";
+            this.textBox_wl.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // timer_run
             // 
             this.timer_run.Tick += new System.EventHandler(this.timer_run_Tick);
+            // 
+            // pictureBox_flag
+            // 
+            this.pictureBox_flag.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox_flag.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox_flag.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_flag.Image")));
+            this.pictureBox_flag.InitialImage = null;
+            this.pictureBox_flag.Location = new System.Drawing.Point(1177, 287);
+            this.pictureBox_flag.Name = "pictureBox_flag";
+            this.pictureBox_flag.Size = new System.Drawing.Size(100, 102);
+            this.pictureBox_flag.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_flag.TabIndex = 9;
+            this.pictureBox_flag.TabStop = false;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.linkLabel1);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Location = new System.Drawing.Point(769, 382);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(494, 119);
+            this.groupBox1.TabIndex = 10;
+            this.groupBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(6, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(421, 25);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Jogo desenvolvido como aprendizagem de C#";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(6, 50);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(410, 25);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Desenvolvido por José Henrique de Andrade";
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.linkLabel1.LinkColor = System.Drawing.Color.Navy;
+            this.linkLabel1.Location = new System.Drawing.Point(6, 96);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(400, 20);
+            this.linkLabel1.TabIndex = 2;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "https://github.com/parseIntJose/DogRunGame-CSharp";
             // 
             // Form1
             // 
@@ -150,7 +217,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1275, 649);
+            this.ClientSize = new System.Drawing.Size(1275, 510);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.pictureBox_flag);
             this.Controls.Add(this.textBox_wl);
             this.Controls.Add(this.checkBox_dog3);
             this.Controls.Add(this.checkBox_dog2);
@@ -160,12 +229,16 @@
             this.Controls.Add(this.pictureBox_dog2);
             this.Controls.Add(this.pictureBox_dog1);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "RunDog!";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_dog1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_dog2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_dog3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_flag)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -183,5 +256,10 @@
         private CheckBox checkBox_dog3;
         private TextBox textBox_wl;
         private System.Windows.Forms.Timer timer_run;
+        private PictureBox pictureBox_flag;
+        private GroupBox groupBox1;
+        private LinkLabel linkLabel1;
+        private Label label2;
+        private Label label1;
     }
 }

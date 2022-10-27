@@ -5,6 +5,8 @@ namespace DogRun
         public Form1()
         {
             InitializeComponent();
+            pictureBox_flag.BringToFront();
+            pictureBox_flag.Parent = pictureBox1;
         }
 
         private void checkBox_dog1_CheckedChanged(object sender, EventArgs e)
